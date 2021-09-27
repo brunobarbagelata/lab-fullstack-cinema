@@ -2,7 +2,7 @@ const Movie = require("../models/Movie.js");
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(`mongodb://localhost:27017/Movie`)
+  .connect(`mongodb://localhost:27017/moviesDB`)
   .then((self) =>
     console.log(`Connected to the database: "${self.connection.name}"`)
   );
